@@ -1,0 +1,83 @@
+{
+  "_설명": "더서브온 AI 자가진단 대시보드 MVP의 F12 '샘플 진단 불러오기' 및 온보딩용 데이터입니다. 이 값들은 컨설팅팀이 2026-07-04 실제로 수행한 사전진단(공개 데이터 기반 실측)에서 확인된 값을 그대로 반영했습니다. report는 PRD 8.2 마스터 진단 프롬프트를 그대로 적용해 생성한 종합 리포트 예시이며, 실제 사용 시에는 이 자리에 매번 새로 생성된 리포트가 채워집니다.",
+  "snapshot": {
+    "id": "sample-snapshot-2026-07-04",
+    "createdAt": "2026-07-04T09:00:00+09:00",
+    "d1": [
+      { "checkedTitle": "70대 1인가구 어르신의 입퇴원 병원동행 사례", "titleSearchUrl": "https://m.search.naver.com/search.naver?query=70대%201인가구%20어르신의%20입퇴원%20병원동행%20사례", "keywordSearchUrl": "https://m.search.naver.com/search.naver?query=병원동행", "titleFoundInSearch": true, "keywordTopPageFound": false },
+      { "checkedTitle": "같은 말을 반복하는 부모님, 치매 초기 어르신과 대화하는 법", "titleSearchUrl": "https://m.search.naver.com/search.naver?query=같은%20말을%20반복하는%20부모님%20치매%20초기%20어르신과%20대화하는%20법", "keywordSearchUrl": "https://m.search.naver.com/search.naver?query=수면내시경%20보호자", "titleFoundInSearch": true, "keywordTopPageFound": false },
+      { "checkedTitle": "여름철 부모님 건강검진, 병원 방문 전 보호자가 꼭 확인할 5가지", "titleSearchUrl": "https://m.search.naver.com/search.naver?query=여름철%20부모님%20건강검진%20병원%20방문%20전%20보호자가%20꼭%20확인할%205가지", "keywordSearchUrl": "https://m.search.naver.com/search.naver?query=부모님%20병원동행", "titleFoundInSearch": true, "keywordTopPageFound": false },
+      { "checkedTitle": "편마비 부모님 강북삼성병원 재활치료 동행", "titleSearchUrl": "https://m.search.naver.com/search.naver?query=편마비%20부모님%20강북삼성병원%20재활치료%20동행", "keywordSearchUrl": "https://m.search.naver.com/search.naver?query=서초%20병원동행", "titleFoundInSearch": true, "keywordTopPageFound": false },
+      { "checkedTitle": "[신경과치매검사] 부모님 뇌 MRI·PET/CT 검사, 전체 일정 병원 동행이 어려운 직장인 보호자라면", "titleSearchUrl": "https://m.search.naver.com/search.naver?query=신경과치매검사%20부모님%20뇌%20MRI%20PET%20CT%20검사", "keywordSearchUrl": "https://m.search.naver.com/search.naver?query=치매검사%20동행", "titleFoundInSearch": false, "keywordTopPageFound": false }
+    ],
+    "d2": [
+      { "keyword": "병원동행 서비스", "tier": "1층_핵심전환", "monthlySearchVolume": 2400, "competitionLevel": "높음" },
+      { "keyword": "병원동행 비용", "tier": "1층_핵심전환", "monthlySearchVolume": 880, "competitionLevel": "높음" },
+      { "keyword": "수면내시경 보호자", "tier": "2층_상황검사", "monthlySearchVolume": 1300, "competitionLevel": "보통" },
+      { "keyword": "치매검사 동행", "tier": "2층_상황검사", "monthlySearchVolume": 320, "competitionLevel": "낮음" },
+      { "keyword": "항암 병원동행", "tier": "2층_상황검사", "monthlySearchVolume": 210, "competitionLevel": "낮음" },
+      { "keyword": "서초 병원동행", "tier": "3층_지역B2B", "monthlySearchVolume": 140, "competitionLevel": "낮음" },
+      { "keyword": "임직원 부모돌봄 복지", "tier": "3층_지역B2B", "monthlySearchVolume": 90, "competitionLevel": "낮음" }
+    ],
+    "d3": [
+      { "title": "70대 1인가구 어르신의 입퇴원 병원동행 사례", "pubDate": "2026-06-27", "excerpt": "혼자 지내시는 70대 어르신의 입원부터 퇴원까지 매니저가 동행한 사례를 소개합니다.", "titleFormat": "사례형", "purposeTag": "신뢰", "category": "병원동행_사례", "hasCTA": false, "ctaKeywordsFound": [], "safetyFlags": [] },
+      { "title": "[신경과치매검사] 부모님 뇌 MRI·PET/CT 검사, 전체 일정 병원 동행이 어려운 직장인 보호자라면", "pubDate": "2026-06-18", "excerpt": "신경과 진료와 뇌 MRI, PET/CT 검사까지 반나절 이상 걸리는 치매검사 일정에 대한 안내입니다.", "titleFormat": "지역형", "purposeTag": "노출", "category": "검사_진료별_안내", "hasCTA": false, "ctaKeywordsFound": [], "safetyFlags": [] },
+      { "title": "같은 말을 반복하는 부모님, 치매 초기 어르신과 대화하는 법", "pubDate": "2026-06-11", "excerpt": "치매 초기 증상이 의심되는 어르신과 대화할 때 주의할 점을 정리했습니다.", "titleFormat": "체크리스트형", "purposeTag": "공감", "category": "보호자_고민_해결", "hasCTA": false, "ctaKeywordsFound": [], "safetyFlags": [] },
+      { "title": "여름철 부모님 건강검진, 병원 방문 전 보호자가 꼭 확인할 5가지 2026 최신 가이드", "pubDate": "2026-06-04", "excerpt": "여름철 건강검진 전 보호자가 챙겨야 할 준비사항 5가지를 안내합니다.", "titleFormat": "체크리스트형", "purposeTag": "노출", "category": "계절성_건강_콘텐츠", "hasCTA": true, "ctaKeywordsFound": ["상담"], "safetyFlags": [] },
+      { "title": "편마비 부모님 강북삼성병원 재활치료 동행", "pubDate": "2026-05-28", "excerpt": "편마비 진단을 받은 부모님의 재활치료 병원동행 사례를 소개합니다.", "titleFormat": "지역형", "purposeTag": "신뢰", "category": "병원동행_사례", "hasCTA": false, "ctaKeywordsFound": [], "safetyFlags": [] },
+      { "title": "[B2B] 서울 대학병원 MRI 검사 보호자 없이 가능할까요?", "pubDate": "2026-05-20", "excerpt": "임직원 복지로 병원동행을 도입하려는 기업 담당자를 위한 안내입니다. 저희가 확실히 치료해드리니 안심하셔도 됩니다.", "titleFormat": "질문형", "purposeTag": "전환", "category": "기업복지_콘텐츠", "hasCTA": true, "ctaKeywordsFound": ["신청"], "safetyFlags": [ { "phrase": "저희가 확실히 치료해드리니", "suggestion": "병원 일정에 동행해드리니" } ] }
+    ],
+    "d4": [
+      { "channel": "네이버 블로그", "isOperating": true, "lastActivityDaysAgo": 8, "targetStrength": 9 },
+      { "channel": "네이버 플레이스", "isOperating": false, "lastActivityDaysAgo": 999, "targetStrength": 9 },
+      { "channel": "카카오 채널", "isOperating": true, "lastActivityDaysAgo": 45, "targetStrength": 8.5 },
+      { "channel": "당근 비즈프로필", "isOperating": true, "lastActivityDaysAgo": 60, "targetStrength": 7 },
+      { "channel": "네이버 카페/지식iN", "isOperating": false, "lastActivityDaysAgo": 999, "targetStrength": 7.5 },
+      { "channel": "유튜브", "isOperating": true, "lastActivityDaysAgo": 120, "targetStrength": 6 },
+      { "channel": "인스타그램", "isOperating": true, "lastActivityDaysAgo": 20, "targetStrength": 3.5 },
+      { "channel": "페이스북", "isOperating": true, "lastActivityDaysAgo": 35, "targetStrength": 3 }
+    ],
+    "d5": [
+      { "stepName": "블로그 글에서 CTA 확인", "passed": false, "note": "최근 21개 글 중 문의·전화·카카오 CTA 문구가 발견되지 않음" },
+      { "stepName": "홈페이지 서비스 목록 → 동행 신청하기 클릭", "passed": true },
+      { "stepName": "시간/가격 선택 모달 진입", "passed": true },
+      { "stepName": "비로그인 상태로 신청 진행", "passed": false, "note": "'로그인이 필요한 서비스입니다' 알림 후 차단, 비회원 상담 대안 경로 없음" }
+    ],
+    "report": {
+      "overallVerdict": "블로그 콘텐츠는 네이버 검색에 정상적으로 색인되고 있으나, 핵심 키워드 상위 노출에서는 경쟁사에 밀리는 것으로 보입니다. 또한 발행된 콘텐츠 대부분에 상담 유도 문구(CTA)가 없고, 홈페이지 신청 과정이 비회원 단계에서 차단되어 있어, 노출·콘텐츠 자체보다는 '전환 유도 부족'이 가장 시급한 개선 지점으로 보입니다.",
+      "verdictTable": [
+        { "item": "D1 노출", "result": "제목검색 5건 중 4건 확인(80%)으로 색인은 정상이나, 핵심 키워드 상위노출은 0건으로 경쟁 열세", "status": "주의" },
+        { "item": "D2 키워드", "result": "2층(상황·검사) 키워드 중 '치매검사 동행'(월 320회, 경쟁 낮음)이 단기 승부처로 확인됨", "status": "정상" },
+        { "item": "D3 콘텐츠", "result": "최근 발행 6건 중 CTA 포함 2건(33%)으로 전환 유도 부족, 위험 표현 1건 발견", "status": "취약" },
+        { "item": "D4 채널", "result": "네이버 플레이스·카페/지식iN이 타깃 존재 강도는 높으나(7.5 이상) 미운영 상태로 최우선 보강 대상", "status": "취약" },
+        { "item": "D5 전환동선", "result": "블로그 CTA 부재와 비회원 신청 차단, 2개 지점에서 병목 확인", "status": "취약" }
+      ],
+      "contentPurposeBalance": { "노출": 0.33, "공감": 0.17, "신뢰": 0.33, "전환": 0.17, "unbalancedTags": ["전환"] },
+      "priorityActions": [
+        "모든 블로그 글 하단에 표준 CTA(상담/전화/카카오/신청) 문구 삽입",
+        "네이버 플레이스 등록 및 관리 상태 즉시 점검 (미등록 시 등록)",
+        "'저희가 확실히 치료해드리니' 등 위험 표현이 포함된 기업복지 글 즉시 수정",
+        "홈페이지 신청 과정에 비회원 상담·카카오 문의 선택지 추가",
+        "'치매검사 동행' 등 2층 키워드를 활용한 신규 콘텐츠 우선 제작"
+      ],
+      "safetyFlagsFound": [
+        { "postTitle": "[B2B] 서울 대학병원 MRI 검사 보호자 없이 가능할까요?", "phrase": "저희가 확실히 치료해드리니", "suggestion": "병원 일정에 동행해드리니" }
+      ],
+      "channelQuadrant": [
+        { "channel": "네이버 블로그", "targetStrength": 9, "operationLevel": "높음", "priority": false },
+        { "channel": "네이버 플레이스", "targetStrength": 9, "operationLevel": "낮음", "priority": true },
+        { "channel": "카카오 채널", "targetStrength": 8.5, "operationLevel": "보통", "priority": false },
+        { "channel": "당근 비즈프로필", "targetStrength": 7, "operationLevel": "보통", "priority": false },
+        { "channel": "네이버 카페/지식iN", "targetStrength": 7.5, "operationLevel": "낮음", "priority": true },
+        { "channel": "유튜브", "targetStrength": 6, "operationLevel": "낮음", "priority": false },
+        { "channel": "인스타그램", "targetStrength": 3.5, "operationLevel": "높음", "priority": false },
+        { "channel": "페이스북", "targetStrength": 3, "operationLevel": "보통", "priority": false }
+      ],
+      "followUpQuestions": [
+        "네이버 블로그 관리자 통계의 최근 30일 검색 유입 키워드 상위 20개는 무엇인가요?",
+        "네이버 플레이스 등록·관리 권한은 누가 갖고 있나요?",
+        "콘텐츠 최종 승인자는 누구이며 의료·개인정보 표현 검수 기준이 있나요?"
+      ]
+    }
+  }
+}
