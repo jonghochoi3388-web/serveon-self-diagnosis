@@ -19,12 +19,12 @@ interface TabNavProps {
 
 export default function TabNav({ active, onChange }: TabNavProps) {
   return (
-    <nav className="no-print flex flex-wrap gap-1 border-b border-slate-200 bg-white px-4">
+    <nav className="no-print flex gap-1 overflow-x-auto border-b border-slate-200 bg-white px-2 sm:px-4 [-ms-overflow-style:none] [scrollbar-width:none]">
       {TAB_KEYS.map((key) => (
         <button
           key={key}
           onClick={() => onChange(key)}
-          className={`px-4 py-3 text-sm font-medium transition-colors ${
+          className={`shrink-0 whitespace-nowrap px-3 py-3 text-sm font-medium transition-colors sm:px-4 ${
             active === key
               ? "border-b-2 border-sky-700 text-sky-800"
               : "text-slate-500 hover:text-slate-700"

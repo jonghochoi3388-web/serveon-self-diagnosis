@@ -182,7 +182,7 @@ export default function Home() {
       <InfoBanner />
       <TabNav active={activeTab} onChange={setActiveTab} />
 
-      <main className="mx-auto w-full max-w-6xl flex-1 p-6">
+      <main className="mx-auto w-full max-w-6xl flex-1 p-4 sm:p-6">
         {activeTab === "D1" && (
           <D1ExposureTab results={d1} onChange={setD1} auditedTitles={posts.map((p) => p.title)} />
         )}
