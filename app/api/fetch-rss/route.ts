@@ -1,6 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 import { XMLParser } from "fast-xml-parser";
 
+// 외부 RSS(네이버 등) 응답 지연에 대비해 함수 실행 시간을 늘림
+export const maxDuration = 30;
+
 function stripHtml(input: string): string {
   return input
     .replace(/<[^>]*>/g, " ")

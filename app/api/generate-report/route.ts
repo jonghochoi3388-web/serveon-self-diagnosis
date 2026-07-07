@@ -24,13 +24,23 @@ export async function POST(request: NextRequest) {
 
   const { d1 = [], d2 = [], d3 = [], d4 = [], d5 = [] } = body ?? {};
 
+  // 리포트 판정은 excerpt(본문 요약)를 사용하지 않으므로 프롬프트에서 제거해
+  // 입력 토큰을 줄인다(결과는 동일, 비용·지연 절감).
+  const d3ForReport = Array.isArray(d3)
+    ? d3.map((p: Record<string, unknown>) => {
+        const rest = { ...p };
+        delete rest.excerpt;
+        return rest;
+      })
+    : d3;
+
   try {
     const report = await callClaudeJson<DiagnosisReport>(
       client,
       getModel(),
       REPORT_SYSTEM_PROMPT,
-      buildReportUserMessage({ d1, d2, d3, d4, d5 }),
-      4096
+      // maxTokens는 helper 기본값(8192) 사용 — 판정표+채널8+개선과제 등 잘림 방지
+      buildReportUserMessage({ d1, d2, d3: d3ForReport, d4, d5 })
     );
     return NextResponse.json(report, { status: 200 });
   } catch (err) {
